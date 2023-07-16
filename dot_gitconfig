@@ -1,0 +1,10 @@
+[core]
+	editor = code --wait
+	fsmonitor = true
+[user]
+	name = Frode Flaten
+	email = 3436158+fflaten@users.noreply.github.com
+[init]
+	defaultBranch = main
+[gui]
+	recentrepo = C:/Users/Frode/Git/Pester
