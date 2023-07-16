@@ -22,7 +22,8 @@ if ($PSStyle) {
 }
 
 #region ModuleImports
-#Import-Module Terminal-Icons -ErrorAction SilentlyContinue
+Import-Module Microsoft.PowerShell.Utility -ErrorAction Ignore
+Import-Module Terminal-Icons -ErrorAction Ignore
 #endregion ModuleImports
 
 #region Helpers
