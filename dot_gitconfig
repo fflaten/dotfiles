@@ -4,9 +4,12 @@
 [user]
 	name = Frode Flaten
 	email = 3436158+fflaten@users.noreply.github.com
+	signingkey = C:\\Users\\Frode\\.ssh\\id_ed25519_sk.pub
 [init]
 	defaultBranch = main
 [gui]
 	recentrepo = C:/Users/Frode/Git/Pester
 [alias]
     gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f"
+[gpg]
+	format = ssh
