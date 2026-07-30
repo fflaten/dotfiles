@@ -75,7 +75,7 @@
           "style": "powerline"
         },
         {
-          "template": "<darkGray>\ue0b1 </>{{ .Icon }}{{ if ne .Status \"stopped\" }}{{ .Artist }} - {{ .Track }}{{ end }}",
+          "template": "<darkGray>\ue0b1 </>{{ .Icon }}{{ if ne .Status \"stopped\" }}{{ if .Artist }}{{ .Artist }} - {{ end }}{{ .Track }}{{ end }}",
           "foreground": "lightGreen",
           "powerline_symbol": "\ue0b0",
           "background": "p:background",
