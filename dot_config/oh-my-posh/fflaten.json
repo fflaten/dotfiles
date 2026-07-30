@@ -15,7 +15,7 @@
             "style": "austin",
             "threshold": 500
           },
-          "template": " <p:background>\uf06ad</> {{ .FormattedMs }} ",
+          "template": " <p:background>\udb86\udd9f</> {{ .FormattedMs }} ",
           "foreground": "p:foreground",
           "powerline_symbol": "\ue0b0",
           "background": "lightRed",
