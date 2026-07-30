@@ -4,15 +4,15 @@
     "actions": 
     [
         {
-            "command": "paste",
-            "id": "User.paste"
-        },
-        {
             "command": 
             {
                 "action": "newTab"
             },
             "id": "User.newTab.5DEADB41"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste"
         },
         {
             "command": 
@@ -23,6 +23,14 @@
             "id": "User.copy.644BA8F2"
         },
         {
+            "command": "toggleFocusMode",
+            "id": "User.toggleFocusMode"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -30,14 +38,6 @@
                 "splitMode": "duplicate"
             },
             "id": "User.splitPane.A6751878"
-        },
-        {
-            "command": "find",
-            "id": "User.find"
-        },
-        {
-            "command": "toggleFocusMode",
-            "id": "User.toggleFocusMode"
         },
         {
             "command": 
@@ -55,28 +55,28 @@
     "keybindings": 
     [
         {
-            "id": "User.paste",
-            "keys": "ctrl+v"
-        },
-        {
             "id": "User.find",
             "keys": "ctrl+f"
         },
         {
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
+            "id": "User.paste",
+            "keys": "ctrl+v"
         },
         {
             "id": "User.newTab.5DEADB41",
             "keys": "ctrl+t"
         },
         {
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
         },
         {
             "id": "User.commandPalette.D3F0B923",
             "keys": "ctrl+shift+p"
+        },
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
         },
         {
             "id": "User.toggleFocusMode",
@@ -95,11 +95,10 @@
         {
             "font": 
             {
-                "face": "CaskaydiaCove NF Mono",
+                "face": "Cascadia Mono NF",
                 "size": 10
             },
             "opacity": 50,
-            "tabTitle": null,
             "useAcrylic": false
         },
         "list": 
@@ -121,11 +120,10 @@
                 "backgroundImageAlignment": "center",
                 "backgroundImageOpacity": 0.3,
                 "backgroundImageStretchMode": "uniformToFill",
-                "guid": "{a3a2e83a-884a-5379-baa8-16f193a13b21}",
+                "guid": "{2595cd9c-8f05-55ff-a1d4-93f3041ca67f}",
                 "hidden": false,
-                "name": "PowerShell 7 Preview",
-                "source": "Windows.Terminal.PowershellCore",
-                "useAcrylic": false
+                "name": "PowerShell Preview (msix)",
+                "source": "Windows.Terminal.PowershellCore"
             },
             {
                 "colorScheme": "PowershellFrode",

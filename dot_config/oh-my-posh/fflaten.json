@@ -11,12 +11,11 @@
       "alignment": "left",
       "segments": [
         {
-          "properties": {
-            "cache_duration": "none",
+          "options": {
             "style": "austin",
             "threshold": 500
           },
-          "template": " <p:background>\ufbab</> {{ .FormattedMs }} ",
+          "template": " <p:background>\uf06ad</> {{ .FormattedMs }} ",
           "foreground": "p:foreground",
           "powerline_symbol": "\ue0b0",
           "background": "lightRed",
@@ -24,9 +23,6 @@
           "style": "powerline"
         },
         {
-          "properties": {
-            "cache_duration": "none"
-          },
           "template": " \uf0e7 ",
           "foreground": "p:foreground",
           "powerline_symbol": "\ue0b0",
@@ -35,34 +31,11 @@
           "style": "powerline"
         },
         {
-          "properties": {
-            "cache_duration": "none"
-          },
           "template": "{{ if .Error }}❌{{ end }}",
           "type": "status",
           "style": "plain"
         },
         {
-          "properties": {
-            "alpine": "\uf300",
-            "arch": "\uf303",
-            "cache_duration": "none",
-            "centos": "\uf304",
-            "debian": "\uf306",
-            "elementary": "\uf309",
-            "fedora": "\uf30a",
-            "gentoo": "\uf30d",
-            "linux": "\ue712",
-            "macos": "\ue711",
-            "manjaro": "\uf312",
-            "mint": "\uf30f",
-            "opensuse": "\uf314",
-            "raspbian": "\uf315",
-            "ubuntu": "\uf31c",
-            "windows": "\ue70f",
-            "wsl": "\ue712",
-            "wsl_separator": " on "
-          },
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "foreground": "p:lightText",
           "powerline_symbol": "\ue0b0",
@@ -71,7 +44,7 @@
           "style": "powerline"
         },
         {
-          "properties": {
+          "options": {
             "cache_duration": "none"
           },
           "template": "{{ if .SSHSession }} \uf817 {{ .UserName }}@{{ .HostName }}<darkGray> \ue0b1</>{{ end }}",
@@ -82,8 +55,7 @@
           "style": "powerline"
         },
         {
-          "properties": {
-            "cache_duration": "none",
+          "options": {
             "folder_icon": "📂",
             "hide_root_location": false,
             "home_icon": "🏠",
@@ -103,10 +75,6 @@
           "style": "powerline"
         },
         {
-          "properties": {
-            "cache_duration": "none",
-            "track_separator": " - "
-          },
           "template": "<darkGray>\ue0b1 </>{{ .Icon }}{{ if ne .Status \"stopped\" }}{{ .Artist }} - {{ .Track }}{{ end }}",
           "foreground": "lightGreen",
           "powerline_symbol": "\ue0b0",
@@ -115,9 +83,6 @@
           "style": "powerline"
         },
         {
-          "properties": {
-            "cache_duration": "none"
-          },
           "template": "{{if ne .Env.TERM_PROGRAM \"vscode\"}}<darkGray>\ue0b1 </>{{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }} {{ end }}",
           "foreground": "lightYellow",
           "powerline_symbol": "\ue0b0",
@@ -126,7 +91,7 @@
           "style": "powerline"
         },
         {
-          "properties": {
+          "options": {
             "cache_duration": "none"
           },
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
@@ -137,9 +102,10 @@
           "style": "powerline"
         },
         {
-          "properties": {
+          "options": {
             "cache_duration": "none"
           },
+          "cache": {},
           "template": "{{ if .Full }}<darkGray>\ue0b1</> \ue77f {{ .Full }} {{ end }}",
           "powerline_symbol": "\ue0b0",
           "background": "p:background",
@@ -153,9 +119,6 @@
       "alignment": "right",
       "segments": [
         {
-          "properties": {
-            "cache_duration": "none"
-          },
           "alias": "Time",
           "template": "\uf43a {{ .CurrentDate | date .Format }}",
           "foreground": "p:lightText",
@@ -169,10 +132,10 @@
       "alignment": "left",
       "segments": [
         {
-          "properties": {
+          "options": {
             "cache_duration": "none"
           },
-          "template": "❯",
+          "template": "\u276f",
           "foreground": "lightGreen",
           "type": "text",
           "style": "plain"
